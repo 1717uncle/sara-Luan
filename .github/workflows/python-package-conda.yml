@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+years = [2018, 2019, 2021]
+subscribers = [100, 150, 200]  # in millions
+
+# Plotting
+plt.figure(figsize=(8, 6))
+plt.plot(years, subscribers, marker='o')
+plt.title('Global Amazon Prime Subscribers (2018-2021)')
+plt.xlabel('Year')
+plt.ylabel('Subscribers (Millions)')
+plt.grid(True)
+plt.xticks(years)
+plt.tight_layout()
+plt.show()
